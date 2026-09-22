@@ -2,18 +2,13 @@ from setuptools import setup, find_packages
 
 setup(
     name="farahidi-engine",
-    version="0.2.0",
-    description="محرك المعجم العربي الحتمي مع دعم الذكاء الاصطناعي كطبقة احتياطية",
-    long_description=open("README.md", encoding="utf-8").read(),
-    long_description_content_type="text/markdown",
+    version="0.3.0",
     packages=find_packages(),
     install_requires=[
-        "google-generativeai>=0.4.0",
+        "google-generativeai",
     ],
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Natural Language :: Arabic",
-    ],
-    python_requires=">=3.7",
+    description="محرك لغوي عربي هجين يعتمد على التخزين المحلي والذكاء الاصطناعي",
+    author="Mzydhai11-ctrl",
+    author_email="mzydhaif11@gmail.com",
+    url="https://github.com/mzydhai11-ctrl/farahidi",
 )
